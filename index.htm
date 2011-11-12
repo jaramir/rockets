@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Rockets!</title>
-    </head>
-    <body>
-        <h2>Let's build a rocket!</h2>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Rockets!</title>
+    <meta name="description" content="a rocket builder for high frontier boardgame">
+    <meta name="author" content="Francesco Gigli">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ui-darkness/jquery-ui-1.8.16.custom.css">
+</head>
+<body>
+    <div>
+        <div class="stack" id="crew"></div>
+        <div class="stack" id="thruster"></div>
+        <div class="stack" id="robonaut"></div>
+        <div class="stack" id="refinery"></div>
+        <div class="stack" id="radiator"></div>
+        <div class="stack landscape" id="generator"></div>
+        <div class="stack landscape" id="reactor"></div>
+    </div>
+    <div class="rocket">
+        <div class="info">
+            Weight: <span class="mass">N/A</span><br/>
+            Dry thrust: <span class="dry_thrust">N/A</span><br/>
+            Fuel Cons.: <span class="cons">N/A</span><br/>
+            Lowest Rad-Hard: <span class="low_rad">N/A</span><br/>
+            <a href="#">link to this design</a>
+        </div>
+        <div class="cards"></div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.rocket.js"></script>
+    <script src="js/jquery.stack.js"></script>
+    <script src="js/jquery.card.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
+
